@@ -1,0 +1,319 @@
+<html>
+<head><title>Calculator</title></head>
+<body style="padding-top:30px">
+<script>
+	var g = 1;
+	var op = "";
+	var o1 = "";
+	var o2="";
+	function cl(){
+	  document.getElementById("que").value = "0";
+	  document.getElementById("ans").value = "";
+	  o1= "";
+	  o2= "";
+	  g =1;
+	  op="";
+	}
+	function n1(){
+	  if (g==3){
+      	document.getElementById("que").value += "1";
+      	o2 += "1";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "1";
+      	o1 += "1";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="1";
+      	g=2;
+      	o1 += "1";
+      }
+	}
+	function n2(){
+      if (g==3){
+      	document.getElementById("que").value += "2";
+      	o2 += "2";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "2";
+      	o1 += "2";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="2";
+      	g=2;
+      	o1 += "2";
+      }
+	}
+	function n3(){
+     if (g==3){
+      	document.getElementById("que").value += "3";
+      	o2 += "3";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "3";
+      	o1 += "3";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="3";
+      	g=2;
+      	o1 += "3";
+      }
+	}
+	function n4(){
+    if (g==3){
+      	document.getElementById("que").value += "4";
+      	o2 += "4";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "4";
+      	o1 += "4";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="4";
+      	o1 +="4";
+      	g=2;
+      }
+	}
+	function n5(){
+      if (g==3){
+      	document.getElementById("que").value += "5";
+      	o2 += "5";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "5";
+      	o1 += "5";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="5";
+      	g=2;
+      	o1 += "5";
+      }
+	}
+	function n6(){
+     if (g==3){
+      	document.getElementById("que").value += "6";
+      	o2 += "6";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "6";
+      	o1 += "6";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="6";
+      	g=2;
+      	o1 += "6";
+      }
+	}
+	function n7(){
+        if (g==3){
+      	document.getElementById("que").value += "7";
+      	o2 += "7";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "7";
+      	o1 += "7";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="7";
+      	g=2;
+      	o1 += "7";
+      }
+	}
+	function n8(){
+         if (g==3){
+      	document.getElementById("que").value += "8";
+      	o2 += "8";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "8";
+      	o1 += "8";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="8";
+      	g=2;
+      	o1 += "8";
+      }
+	}
+	function n9(){
+       if (g==3){
+      	document.getElementById("que").value += "9";
+      	o2 += "9";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "9";
+      	o1 += "9";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="9";
+      	g=2;
+      	o1 += "9";
+      }
+	}
+	function n0(){
+   if (g==3){
+      	document.getElementById("que").value += "0";
+      	o2 += "0";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += "0";
+      	o1 += "0";
+      }
+      if (g==1) {
+      	document.getElementById("que").value="0";
+      	g=2;
+      	o1 += "0";
+      }
+	}
+	function po(){
+   if (g==3){
+      	document.getElementById("que").value += ".";
+      	o2 += ".";
+      }
+	   if (g==2){
+      	document.getElementById("que").value += ".";
+      	o1 += ".";
+      }
+      if (g==1) {
+      	document.getElementById("que").value=".";
+      	g=2;
+      	o1 += ".";
+      }
+	}
+	function pl(){
+	  if (g==3){
+	  	alert("Oops! Only one Operator can be used");
+	  }
+	  if (g==2){
+      	document.getElementById("que").value += "+";
+      	op="+";
+      	g = 3;
+      }
+      if (g==1) {
+      	document.getElementById("que").value="+";
+      	g=2;
+      }
+	}
+	function mi(){
+	  if (g==3){
+	  	alert("Oops! Only one Operator can be used");
+	  }
+	  if (g==2){
+      	document.getElementById("que").value += "-";
+      	op="-";
+      	g = 3;
+      }
+      if (g==1) {
+      	document.getElementById("que").value="-";
+      	o1+="-";
+      	g=2;
+      }
+	}
+	function di(){
+	  if (g==3){
+	  	alert("Oops! Only one Operator can be used");
+	  }
+	  if (g==2){
+      	document.getElementById("que").value += "/";
+      	op="/";
+      	g = 3;
+      }
+      if (g==1) {
+      	document.getElementById("que").value="/";
+      	g=2;
+      }
+	}
+	function ti(){
+	  if (g==3){
+	  	alert("Oops! Only one Operator can be used");
+	  }
+	  if (g==2){
+      	document.getElementById("que").value += "*";
+      	op="*";
+      	g = 3;
+      }
+      if (g==1) {
+      	document.getElementById("que").value="*";
+      	g=2;
+      }
+	}
+	function eq(){
+	  if (g==3){
+	  	document.getElementById("ans").value= eval(o1 + op + o2);
+	  	g=4;
+	  }
+	}
+</script>
+<center><div style="border-radius:30px;padding-top:80px;padding-right:10px;padding-left:10px;padding-bottom:40px;width:70%;background-color:#f2f2f2"><table style="width:95%" cellspacing="0" cellpadding="0">
+	<tr><td style="width:100%" colspan="4">
+		<input type="label" maxlength="25" style="width:100%;height:58px;font-family:tahoma;font-size:40px;font-weight:bold;background-color:lightgreen;text-align:right;border-top-right-radius:30px;border-top-left-radius:30px;padding-left:30px;padding-right:30px;border:0" id="que"  readonly="readonly" value="0">
+    </td>
+	</tr>
+	<tr>
+		<tr><td style="width:100%" colspan="4">
+		<input type="label" maxlength="40" style="width:100%;height:45px;font-family:tahoma;font-size:30px;font-weight:bold;background-color:lightgreen;text-align:right;border-bottom-right-radius:30px;border-bottom-left-radius:30px;padding-left:30px;padding-right:30px;border:0" id="ans" readonly="readonly">
+    </td>
+	</tr>
+	<tr>
+		<td style="text-align:right;padding-top:20px" colspan="4">
+         <button style="cursor:hand;border-radius:20px;font-family:tahoma;font-size:40px;padding-left:30px;padding-right:30px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="cl()">C</button>
+        </td>
+	</tr>
+	<tr>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n1()">1</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n2()">2</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0;" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n3()">3</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="pl()">+</button>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n4()">4</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n5()">5</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0;" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n6()">6</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="mi()">-</button>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n7()">7</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n8()">8</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0;" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n9()">9</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="di()">/</button>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="po()">.</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="n0()">0</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0;" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="eq()">=</button>
+		</td>
+		<td style="padding-top:20px;padding-left:5px">
+		  <button style="cursor:hand;border-radius:20px;width:100%;font-family:tahoma;font-size:40px;padding:10px;font-weight:bold;background-color:gray;border:0" onmouseover="this.style.background='lightgray'" onmouseout="this.style.background='gray'" onclick="ti()">*</button>
+		</td>
+	</tr>
+</table></center>
+</body>
+</html>
